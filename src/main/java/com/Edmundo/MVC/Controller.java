@@ -8,7 +8,7 @@ import java.awt.event.ActionListener;
  */
 public class Controller {
     private Model model;
-    private View view;
+    public View view;
     private ActionListener actionListener;
 
     public Controller(Model model, View view){
@@ -34,11 +34,11 @@ public class Controller {
         view.getButtonPlus().addActionListener(actionListener);
     }
 
-    private void linkBtnAndLabelInc(){
+    public void linkBtnAndLabelInc(){
         model.incX();
         view.setText(Integer.toString(model.getX()));
     }
-    private void linkBtnAndLabelMinus(){
+    public void linkBtnAndLabelMinus(){
         model.decX();
         view.setText(Integer.toString(model.getX()));
     }

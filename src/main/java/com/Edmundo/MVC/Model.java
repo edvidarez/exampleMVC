@@ -19,6 +19,7 @@ public class Model {
         x++;
     }
     public void decX(){
+        System.out.println("dec");
         x--;
     }
 
